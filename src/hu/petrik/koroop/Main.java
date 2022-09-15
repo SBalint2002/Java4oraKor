@@ -18,7 +18,24 @@ public class Main {
         Scanner sc = new Scanner(in);
         out.print("Adjon meg egy sugár méretet amire állítsam az K1-et: ");
         k1.setSugar(sc.nextDouble());
-        out.printf("A kör új kerülete: %f",k1.getKerulet());
+        out.printf("A kör új kerülete: %f\n\n",k1.getKerulet());
+
+        out.println(k1.toString());
+
+        Kor[] korok = new Kor[10];
+        for (int i = 0; i < korok.length; i++) {
+            korok[i] = new Kor(Math.random()*100+1, (int)(Math.random()*10), (int)(Math.random()*10));
+        }
+
+        double legnagyobb = 0;
+        for (int i = 0; i < korok.length; i++) {
+            if (korok[i].getTerulet() > legnagyobb){
+                legnagyobb = korok[i].getTerulet();
+            }
+        }
+        out.printf("A legnagyobb kör területe: %.2f",legnagyobb);
+
+
 
 
     }

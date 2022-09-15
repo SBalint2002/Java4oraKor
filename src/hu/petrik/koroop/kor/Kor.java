@@ -31,4 +31,8 @@ public class Kor {
         this.sugar = sugar;
     }
 
+    @Override
+    public String toString() {
+        return "(x: "+ x + ", y: " + y + ", r: " + (int)sugar + ")";
+    }
 }
