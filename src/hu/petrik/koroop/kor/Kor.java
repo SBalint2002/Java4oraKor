@@ -27,7 +27,7 @@ public class Kor {
     }
 
     public double getTerulet(){
-        return ((sugar*2)*Math.PI);
+        return ((sugar*sugar)*Math.PI);
     }
 
 
