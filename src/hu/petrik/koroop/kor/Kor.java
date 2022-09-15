@@ -13,23 +13,22 @@ public class Kor {
     }
 
     //csak sugár
-    public Kor(double sugar){
+    public Kor(double sugar) {
         this.sugar = sugar;
         x = 0;
         y = 0;
     }
 
-    //véletlen
-
-
-    public double getKerulet(){
-        return ((sugar*2)*Math.PI);
+    public double getKerulet() {
+        return ((sugar * 2) * Math.PI);
     }
 
-    public double getTerulet(){
-        return ((sugar*sugar)*Math.PI);
+    public double getTerulet() {
+        return ((sugar * sugar) * Math.PI);
     }
 
-
+    public void setSugar(double sugar) {
+        this.sugar = sugar;
+    }
 
 }
